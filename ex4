@@ -1,0 +1,18 @@
+import numpy as np
+a=list(map(float,input().split()))
+b=a
+a=np.array(a)
+p=[]
+q=[]
+while(len(b)!=0):
+    w=np.max(b)
+    p.append(w)
+    k=0
+    for i in range(len(a)):
+        if(w==a[i]):
+            b.remove(w)
+            k=k+1
+    q.append(k)
+p=np.array(p)
+q=np.array(q)
+print(p,q)
