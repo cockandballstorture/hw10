@@ -1,6 +1,4 @@
 import numpy as np
-a=list(map(float,input().split()))
-b=list(map(float,input().split()))
 a=np.array([a,b])
 k=np.shape(a)
 w=1
