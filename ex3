@@ -1,0 +1,9 @@
+import numpy as np
+a=list(map(float,input().split()))
+x = np.array(a)
+w = np.array(a)
+for i in range(len(x)-1):
+    if(x[i]!=0):
+        w[i+1]=0
+w[0]=0
+np.max(w)
