@@ -1,0 +1,11 @@
+import numpy as np
+a=[1,2,3,4]
+b=[1,0,3,4]
+a=np.array([a,b])
+k=np.shape(a)
+w=1
+for i in range(k[0]):
+    for j in range(k[1]):
+        if(a[i,j]!=0):
+            w=w*a[i,j]
+print(w)
