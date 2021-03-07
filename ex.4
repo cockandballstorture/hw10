@@ -1,0 +1,10 @@
+import numpy as np
+a=[1,2,3,4]
+b=[1,0,3,4]
+a=np.array(a)
+b=np.array(b)
+q=np.zeros((len(a),len(b)))
+for i in range(len(a)):
+    for j in range(len(b)):
+        q[i,j]=(a[i]-b[j])**2
+print(q)
